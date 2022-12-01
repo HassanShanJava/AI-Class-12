@@ -34,7 +34,8 @@ btn.addEventListener("click", function () {
 });
 
 btn.addEventListener("keypress", function (e) {
-    if(e.key === 'enter'){
+    if(e.key === 'Enter'){
+        e.preventDefault()
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=" +
               inputval.value +
