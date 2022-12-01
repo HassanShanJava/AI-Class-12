@@ -39,7 +39,7 @@ body{
     border-radius: 2px;
     margin-right:4px ;
 }
-.inputs input[type="submit"] {
+#add{
     height: 3.2rem;
     width: 6.5rem;
     background: #0a67ca;
