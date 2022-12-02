@@ -1,6 +1,6 @@
 var inputval = document.querySelector("#cityinput");
 var btn = document.querySelector("#add");
-var btn1 = document.querySelector(".submit");
+// var btn1 = document.querySelector(".submit");
 var city = document.querySelector("#cityoutput");
 var descrip = document.querySelector("#description");
 var temp = document.querySelector("#temp");
@@ -35,12 +35,12 @@ function click() {
       })
       .catch((err) => alert("Wrong City"));
   }
-btn1.addEventListener("keypress", (e)=> {
-    if(e.key === 'enter'){
-        e.preventDefault()
-        click()
-    }
-});
+// btn1.addEventListener("keypress", (e)=> {
+//     if(e.key === 'enter'){
+//         e.preventDefault()
+//         click()
+//     }
+// });
 
 btn.addEventListener("click", click);
 

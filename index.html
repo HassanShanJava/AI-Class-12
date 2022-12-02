@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>OpenApi</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container-fluid">
-
-        <section class="main">
-                
-            <section class="inputs ">
-                <!-- city namme input box -->
-                <h1 class="title">Weather App</h1>
-                <input type="text" placeholder="Enter City" id="cityinput"  autofocus/>
-                <!-- submit button -->
-                <div class="submit">
-                    <button  value="Submit" id="add">Submit</button>
-                </div>     
-
-            </section>
-
-            <!--display info  -->
-            <section class="display">
-                <div class="wrapper">
-                  <h2 id="cityoutput"></h2>
-                  <p id="description"></p>
-                  <p id="temp"></p>
-                  <p id="wind"></p>
-                </div>
-              </section>
-
+      <section class="main">
+        <section class="inputs">
+          <!-- city namme input box -->
+          <h1 class="title">Weather App</h1>
+          <form onsubmit="click(); return false">
+            <input
+              type="text"
+              placeholder="Enter City"
+              id="cityinput"
+              autofocus
+            />
+            <!-- submit button -->
+            <!-- <div class="submit"> -->
+              <button  id="add">Submit</button>
+            <!-- </div> -->
+          </form>
         </section>
+
+        <!--display info  -->
+        <section class="display">
+          <div class="wrapper">
+            <h2 id="cityoutput"></h2>
+            <p id="description"></p>
+            <p id="temp"></p>
+            <p id="wind"></p>
+          </div>
+        </section>
+      </section>
     </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
